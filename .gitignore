@@ -1,0 +1,93 @@
+# ==========================
+# Gradle
+# ==========================
+.gradle/
+build/
+**/build/
+
+# Local configuration
+local.properties
+
+# ==========================
+# Android Studio
+# ==========================
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# ==========================
+# VS Code
+# ==========================
+.vscode/
+
+# ==========================
+# IntelliJ
+# ==========================
+out/
+
+# ==========================
+# Log files
+# ==========================
+*.log
+
+# ==========================
+# OS Files
+# ==========================
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Generated files
+# ==========================
+captures/
+.externalNativeBuild/
+.cxx/
+
+# ==========================
+# APK / AAB
+# ==========================
+*.apk
+*.aab
+*.ap_
+
+# ==========================
+# Keystores (Never Commit)
+# ==========================
+*.jks
+*.keystore
+*.pem
+
+# ==========================
+# Firebase
+# ==========================
+google-services.json
+GoogleService-Info.plist
+
+# ==========================
+# Secrets
+# ==========================
+*.properties
+!gradle.properties
+
+# Ignore environment files
+.env
+.env.*
+
+# ==========================
+# Kotlin
+# ==========================
+*.kotlin_module
+
+# ==========================
+# Lint
+# ==========================
+lint/intermediates/
+lint/generated/
+lint/tmp/
+lint-cache/
+
+# ==========================
+# Profiling
+# ==========================
+*.hprof
