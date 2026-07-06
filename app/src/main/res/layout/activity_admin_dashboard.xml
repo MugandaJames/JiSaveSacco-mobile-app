@@ -27,7 +27,6 @@
             android:textSize="16sp"
             android:layout_marginBottom="20dp"/>
 
-        <!-- Pending Members -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="110dp"
@@ -48,7 +47,8 @@
                     android:layout_height="wrap_content"/>
 
                 <TextView
-                    android:text="18"
+                    android:id="@+id/txtAdminPendingCount"
+                    android:text="0"
                     android:textSize="32sp"
                     android:textStyle="bold"
                     android:textColor="@color/primaryGreen"
@@ -59,7 +59,6 @@
 
         </androidx.cardview.widget.CardView>
 
-        <!-- Active Loans -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="110dp"
@@ -80,7 +79,8 @@
                     android:layout_height="wrap_content"/>
 
                 <TextView
-                    android:text="72"
+                    android:id="@+id/txtAdminActiveLoansCount"
+                    android:text="0"
                     android:textSize="32sp"
                     android:textStyle="bold"
                     android:textColor="@color/primaryGreen"
@@ -91,7 +91,6 @@
 
         </androidx.cardview.widget.CardView>
 
-        <!-- Total Savings -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="110dp"
@@ -112,7 +111,8 @@
                     android:layout_height="wrap_content"/>
 
                 <TextView
-                    android:text="KES 4,500,000"
+                    android:id="@+id/txtAdminTotalSavings"
+                    android:text="KES 0"
                     android:textSize="28sp"
                     android:textStyle="bold"
                     android:textColor="@color/primaryGreen"

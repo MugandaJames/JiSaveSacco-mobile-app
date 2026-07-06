@@ -38,19 +38,23 @@
                         android:src="@mipmap/ic_launcher"
                         android:contentDescription="Profile"/>
 
+                    <!-- FIXED: Added ID for card title display -->
                     <TextView
+                        android:id="@+id/txtProfileHeaderName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="James Juma"
+                        android:text="--"
                         android:textColor="@color/primaryGreen"
                         android:textSize="24sp"
                         android:textStyle="bold"/>
 
+                    <!-- FIXED: Added ID for Member Number -->
                     <TextView
+                        android:id="@+id/txtProfileMemberNo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Member No: JS000123"
+                        android:text="Member No: --"
                         android:textColor="@color/textGray"
                         android:textSize="16sp"/>
 
@@ -78,10 +82,12 @@
                         android:textColor="@color/primaryGreen"
                         android:textSize="16sp"/>
 
+                    <!-- FIXED: Added ID for Full Name -->
                     <TextView
+                        android:id="@+id/txtProfileFullName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="James Juma"
+                        android:text="--"
                         android:textSize="18sp"/>
 
                     <View
@@ -98,10 +104,12 @@
                         android:textColor="@color/primaryGreen"
                         android:textSize="16sp"/>
 
+                    <!-- FIXED: Added ID for National ID -->
                     <TextView
+                        android:id="@+id/txtProfileNationalId"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="12345678"
+                        android:text="--"
                         android:textSize="18sp"/>
 
                     <View
@@ -118,10 +126,12 @@
                         android:textColor="@color/primaryGreen"
                         android:textSize="16sp"/>
 
+                    <!-- FIXED: Added ID for Phone Number -->
                     <TextView
+                        android:id="@+id/txtProfilePhone"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0712345678"
+                        android:text="--"
                         android:textSize="18sp"/>
 
                     <View
@@ -138,10 +148,12 @@
                         android:textColor="@color/primaryGreen"
                         android:textSize="16sp"/>
 
+                    <!-- FIXED: Added ID for Email Address -->
                     <TextView
+                        android:id="@+id/txtProfileEmail"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="james@email.com"
+                        android:text="--"
                         android:textSize="18sp"/>
 
                     <View
@@ -158,10 +170,12 @@
                         android:textColor="@color/primaryGreen"
                         android:textSize="16sp"/>
 
+                    <!-- FIXED: Added ID for Date Joined -->
                     <TextView
+                        android:id="@+id/txtProfileDateJoined"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="15 January 2024"
+                        android:text="--"
                         android:textSize="18sp"/>
 
                     <View
@@ -178,7 +192,9 @@
                         android:textColor="@color/primaryGreen"
                         android:textSize="16sp"/>
 
+                    <!-- FIXED: Added ID for Account Status -->
                     <TextView
+                        android:id="@+id/txtProfileAccountStatus"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="ACTIVE"

@@ -14,9 +14,11 @@
         android:background="@color/background">
 
         <LinearLayout
+            android:id="@+id/layoutLoanDetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:visibility="gone"
             android:padding="16dp">
 
             <androidx.cardview.widget.CardView
@@ -32,36 +34,41 @@
                     android:padding="18dp">
 
                     <TextView
+                        android:id="@+id/txtLoanId"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Loan ID: LN2026001"
+                        android:text="Loan ID: --"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/txtLoanAmount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Loan Amount: KES 150,000" />
+                        android:text="Loan Amount: KES 0" />
 
                     <TextView
+                        android:id="@+id/txtLoanStatus"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Status: Approved"
-                        android:textColor="@color/success"
+                        android:text="Status: Pending"
+                        android:textColor="@color/textGray"
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/txtLoanTypeDisplay"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Approval Date: 20 June 2026" />
+                        android:text="Category: --" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <TextView
+                android:id="@+id/txtProgressHeader"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
@@ -77,16 +84,18 @@
                 android:layout_height="20dp"
                 android:layout_marginTop="12dp"
                 android:max="100"
-                android:progress="60" />
+                android:progress="0" />
 
             <TextView
+                android:id="@+id/txtProgressPercent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="60% Paid"
+                android:text="0% Paid"
                 android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardBalance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
@@ -107,10 +116,11 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/txtOutstandingBalance"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="KES 60,000"
+                        android:text="KES 0"
                         android:textColor="@color/primaryGreen"
                         android:textSize="28sp"
                         android:textStyle="bold" />
@@ -119,6 +129,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardNextPayment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -139,19 +150,21 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/txtNextPaymentAmount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="KES 10,000"
+                        android:text="KES 0"
                         android:textColor="@color/primaryGreen"
                         android:textSize="28sp"
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/txtDueDate"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Due Date: 15 July 2026" />
+                        android:text="Due Date: Flexible" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -168,4 +181,15 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <TextView
+        android:id="@+id/txtNoLoansPlaceholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="You have no active loan records."
+        android:textSize="18sp"
+        android:textColor="@color/textGray"
+        android:visibility="visible" />
+
 </LinearLayout>

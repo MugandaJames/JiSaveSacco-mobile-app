@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
     android:fitsSystemWindows="true">
 
     <include layout="@layout/toolbar" />
@@ -43,10 +42,10 @@
                         android:textSize="18sp" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/txtSavingsBalance" android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
-                        android:text="KES 25,000"
+                        android:text="KES 0"
                         android:textColor="@color/white"
                         android:textSize="34sp"
                         android:textStyle="bold" />
@@ -71,62 +70,19 @@
                 app:cardElevation="4dp">
 
                 <LinearLayout
+                    android:id="@+id/containerTransactions"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:padding="16dp">
 
                     <TextView
+                        android:id="@+id/txtNoTransactions"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="+ KES 5,000 Deposit"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="20 June 2026"
-                        android:textColor="@color/textGray" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginVertical="10dp"
-                        android:background="#DDDDDD" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="+ KES 3,500 Deposit"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="15 June 2026"
-                        android:textColor="@color/textGray" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginVertical="10dp"
-                        android:background="#DDDDDD" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="+ KES 2,000 Deposit"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="10 June 2026"
-                        android:textColor="@color/textGray" />
-
+                        android:text="No transactions recorded yet."
+                        android:textColor="@color/textGray"
+                        android:textSize="16sp"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -146,5 +102,4 @@
 
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>

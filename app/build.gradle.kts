@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
-    // Applies the Google Services tool cleanly via the new Gradle 9 configuration profile
-//    id("com.google.gms.google-services")
+    alias(libs.plugins.google.gms.google.services)
+
 }
 
 android {
@@ -37,13 +37,13 @@ android {
 dependencies {
     implementation(libs.activity.ktx)
     implementation(libs.appcompat)
+    implementation(libs.firebase.database)
+    implementation(libs.firebase.auth)
     implementation(libs.material)
     implementation("androidx.constraintlayout:constraintlayout:2.2.1")
     implementation("androidx.cardview:cardview:1.0.0")
 
-    // FIREBASE REALTIME DATABASE INFRASTRUCTURE
-//    implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
-//    implementation("com.google.firebase:firebase-database")
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.espresso.core)

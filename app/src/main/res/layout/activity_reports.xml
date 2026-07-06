@@ -6,7 +6,6 @@
     android:orientation="vertical"
     android:fitsSystemWindows="true">
 
-    <!-- Reusable Toolbar included at the top -->
     <include layout="@layout/toolbar" />
 
     <ScrollView
@@ -20,7 +19,6 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Registered Members Card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
@@ -41,9 +39,10 @@
                         android:textSize="18sp"/>
 
                     <TextView
+                        android:id="@+id/txtReportsTotalMembers"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="540"
+                        android:text="0"
                         android:textSize="30sp"
                         android:textStyle="bold"
                         android:textColor="@color/primaryGreen"/>
@@ -52,7 +51,6 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Total Savings Card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
@@ -73,9 +71,10 @@
                         android:textSize="18sp"/>
 
                     <TextView
+                        android:id="@+id/txtReportsTotalSavings"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="KES 12,500,000"
+                        android:text="KES 0"
                         android:textSize="26sp"
                         android:textStyle="bold"
                         android:textColor="@color/primaryGreen"/>
@@ -84,7 +83,6 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Loans Issued Card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
@@ -105,9 +103,10 @@
                         android:textSize="18sp"/>
 
                     <TextView
+                        android:id="@+id/txtReportsTotalLoans"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="KES 8,000,000"
+                        android:text="KES 0"
                         android:textSize="26sp"
                         android:textStyle="bold"
                         android:textColor="@color/primaryGreen"/>
